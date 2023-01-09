@@ -1,0 +1,25 @@
+from random import randrange
+
+def find_prod(list_length, prod_result):
+    new_list = []
+    reversed_list = []
+    prod_result = []
+
+    for i in range(list_length):
+        i = randrange(list_length)
+        new_list.append(i)
+    print(new_list)
+    reversed_list = list(reversed(new_list))
+    print(reversed_list)
+
+    if(list_length % 2) == 0:
+        for i in range(list_length):
+            prod_result.append(new_list[i] * reversed_list[i])
+        print(prod_result)
+    else:
+        for i in range(list_length):
+            prod_result.append(new_list[i] * reversed_list[i])
+        prod_result[list_length//2] = new_list[(list_length-1)//2]
+        print(prod_result)
+
+find_prod (int(input('Введите длину списка: ')), prod_result=[])
