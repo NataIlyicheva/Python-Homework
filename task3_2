@@ -21,5 +21,5 @@ def find_prod(list_length, prod_result):
             prod_result.append(new_list[i] * reversed_list[i])
         prod_result[list_length//2] = new_list[(list_length-1)//2]
         print(prod_result)
-
+        
 find_prod (int(input('Введите длину списка: ')), prod_result=[])
