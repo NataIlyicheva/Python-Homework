@@ -1,0 +1,9 @@
+number = int(input('Введите число: '))
+my_list = []
+
+while number:
+    my_list.append(number % 2)
+    number //= 2
+    new_list = list(reversed(my_list))
+
+print(*new_list, sep = '')
