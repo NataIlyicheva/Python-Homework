@@ -8,7 +8,7 @@ def get_sum (numbers, sum):
     for i in range(numbers):
         i = randrange(numbers)
         some_list.append(i)
-
+    
     print(some_list)
 
     odd_list = some_list[:len(some_list):2]
