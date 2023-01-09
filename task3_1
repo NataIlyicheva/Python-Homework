@@ -1,0 +1,20 @@
+from random import randrange
+
+def get_sum (numbers, sum):
+    some_list = []
+    odd_list = []
+    sum = 0
+
+    for i in range(numbers):
+        i = randrange(numbers)
+        some_list.append(i)
+
+    print(some_list)
+
+    odd_list = some_list[:len(some_list):2]
+    for i in odd_list:
+        sum = sum + i
+
+    print(sum)
+
+print (get_sum(int(input('Enter list length: ')), sum))
